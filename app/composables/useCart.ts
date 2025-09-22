@@ -60,7 +60,8 @@ export const useCart = () => {
     const stored = localStorage.getItem('cart');
     if (!stored) return;
     try {
-      updateCart(JSON.parse(stored) as CartItem[]);
+      const parsed = JSON.parse(stored) as CartItem[];
+      updateCart(parsed.filter(item => item.variation?.node));
     } catch {
       updateCart([]);
     }

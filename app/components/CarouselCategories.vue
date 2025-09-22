@@ -3,7 +3,7 @@
 const router = useRouter();
 const route = useRoute();
 
-defineProps({
+const { categories } = defineProps({
   categories: Array,
 });
 
@@ -82,9 +82,10 @@ onBeforeUnmount(() => {
           @click="setCategory(category.name)"
           :class="['card text-black transition cat-button-bezel', route.query.category === category.name ? 'selected' : getCategoryClass(i)]">
           <NuxtImg
+            v-if="category.image?.sourceUrl"
             :alt="category.name"
             loading="lazy"
-            :src="category.image?.sourceUrl"
+            :src="category.image.sourceUrl"
             class="w-[38px] h-[38px] rounded-full object-cover border border-transparent dark:bg-black/15 bg-white/30" />
           <div class="px-3.5">{{ category.name }}</div>
         </div>
