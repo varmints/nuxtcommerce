@@ -12,7 +12,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "bumpp && nuxthub deploy"
+    "deploy": "bumpp && npx nuxthub deploy"
   },
   "dependencies": {
     "@nuxt/image": "^1.11.0",
@@ -30,7 +30,7 @@
     "@iconify-json/svg-spinners": "^1.2.4",
     "@vueuse/core": "^13.9.0",
     "@vueuse/nuxt": "^13.9.0",
-    "bumpp": "^10.2.3",
+    "bumpp": "^9.8.1",
     "wrangler": "^4.36.0"
   },
   "packageManager": "pnpm@10.16.1"
