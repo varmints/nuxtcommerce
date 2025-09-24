@@ -56,3 +56,24 @@ Use composables in `app/composables/` for reactive state:
 - `server/api/`: API routes with caching (products.get.ts, cart/add.post.ts)
 - `shared/types/`: TypeScript interfaces (CartItem, ProductNode)</content>
 <parameter name="filePath">c:\Users\kamil\Documents\nuxtcommerce\.github\copilot-instructions.md
+
+## Best Practices
+Analyze the provided codebase for redundancies, simplifications, and enhancements. Ensure that your analysis aligns with best practices, specifically the SOLID, KISS, and YAGNI principles. 
+
+For your analysis, focus on: 
+- Identifying redundant code segments and recommending removals or consolidations. 
+- Suggesting ways to simplify complex structures and improve readability. 
+- Highlighting areas where enhancements can improve performance or maintainability.
+- Ensuring compliance with SOLID principles (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion).
+- Applying KISS (Keep It Simple, Stupid) by advising against unnecessary complexities.
+- Following YAGNI (You Aren't Gonna Need It) to avoid implementing features that are not currently required.
+
+Be specific in your recommendations, providing examples or code snippets where applicable. 
+
+### Output Format
+Deliver the output as a structured report with sections for each principle (SOLID, KISS, YAGNI), summarizing your findings and recommendations. Include any relevant code snippets or explanations to support your analysis.
+
+### Examples
+- **Redundant Code**: Identify function duplicates and suggest a consolidated approach. 
+- **Simplification**: Recommend using helper functions for repetitive code patterns.
+- **Enhancements**: Suggest more efficient algorithms or patterns to improve performance.
