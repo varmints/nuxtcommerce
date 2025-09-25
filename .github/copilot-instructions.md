@@ -1,7 +1,7 @@
 # NuxtCommerce AI Agent Instructions
 
 ## Architecture Overview
-This is a Nuxt 4 headless storefront for WooCommerce using WordPress + WPGraphQL as the backend. The app follows a client-server pattern where:
+This is a Nuxt 4 headless storefront for WooCommerce using WordPress + WPGraphQL + WooGraphQL as the backend. The app follows a client-server pattern where:
 - **Client-side** (`app/`): Vue components, composables for state management, GraphQL queries
 - **Server-side** (`server/`): Nitro API routes that proxy GraphQL requests with caching and WooCommerce session handling
 - **Data flow**: Client → Nitro API (`/api/*`) → WPGraphQL → WooCommerce
